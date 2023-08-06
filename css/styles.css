@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (max-width: theme(screens.sm)) {
+  #menu-content {
+    clip-path: circle(0% at 93.3% 4.5%);
+  }
+
+  #menu-content.active {
+    clip-path: circle(140% at 93.3% 4.5%);
+  }
+}

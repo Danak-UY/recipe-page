@@ -1,0 +1,24 @@
+{
+  "name": "my-gallery_dev-challenges",
+  "version": "1.0.0",
+  "description": "<!-- Please update value in the {}  -->",
+  "main": "index.js",
+  "scripts": {
+    "dist": "npx tailwindcss -i ./css/styles.css -o ./css/styles.min.css --minify",
+    "watch": "npx tailwindcss -i ./css/styles.css -o ./css/styles.min.css --watch",
+    "deploy": "surge --domain dk-my-gallery.surge.sh",
+    "publish": "npm run dist && npm run deploy"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@savvywombat/tailwindcss-grid-areas": "^3.1.0",
+    "prettier": "^3.0.0",
+    "prettier-plugin-tailwindcss": "^0.4.1",
+    "tailwindcss": "^3.3.3",
+    "tailwindcss-animate": "^1.0.6"
+  },
+  "dependencies": {
+    "countup.js": "^2.7.0"
+  }
+}
