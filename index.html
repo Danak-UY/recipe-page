@@ -21,89 +21,105 @@
   </head>
   <body class="text-gray-dark">
     <div
-      class="container flex min-h-screen max-w-7xl flex-col gap-6 p-4 py-8 md:p-8"
+      class="container flex min-h-screen max-w-5xl flex-col gap-6 p-4 py-8 md:p-8"
     >
-      <header class="flex flex-col gap-3">
-        <h1 class="font-serif text-2xl font-bold">Classic Cheesecake Recipe</h1>
+      <header class="flex flex-col gap-3 md:gap-4">
+        <h1 class="font-serif text-2xl font-bold md:text-5xl">
+          Classic Cheesecake Recipe
+        </h1>
         <div class="flex items-start gap-3">
           <img src="./assets/6dots.svg" alt="" class="my-1 w-3.5" />
-          <p class="text-xs italic text-gray-neutral">
+          <p class="text-xs italic text-gray-neutral md:w-2/3 md:text-sm">
             Look no further for a creamy and ultra smooth classic cheesecake
             recipe! Paired with a buttery graham cracker crust, no one can deny
             its simple decadence. For the best results, bake in a water bath.
           </p>
         </div>
-      </header>
 
-      <main class="mb-8 flex flex-col">
         <img
           src="./assets/cheesecake.webp"
           alt="Slice of cheesecake"
-          class="my-2"
+          class="my-2 aspect-[1938/940] md:mb-8"
         />
+      </header>
+
+      <main
+        class="mb-8 md:flex md:flex-row-reverse md:items-start md:gap-24 lg:gap-40"
+      >
+        <aside
+          class="mb-6 flex shrink-0 flex-col gap-6 md:rounded-2xl md:bg-white md:px-10 md:py-14 md:shadow-lg"
+        >
+          <section class="grid grid-cols-3 gap-8 md:grid-cols-1">
+            <div class="flex items-center gap-4">
+              <span class="material-icons-outlined w-4 text-orange md:w-8">
+                restaurant_menu
+              </span>
+              <p class="flex flex-col">
+                <span
+                  class="text-3xs font-bold uppercase text-gray-light md:text-2xs"
+                >
+                  Yields
+                </span>
+                <span class="text-2xs text-orange md:text-sm">12 servings</span>
+              </p>
+            </div>
+          </section>
+          <section class="grid grid-cols-3 gap-8 md:grid-cols-1">
+            <div class="flex items-center gap-4">
+              <span class="material-icons-outlined w-4 md:w-8"> schedule </span>
+              <p class="flex flex-col">
+                <span
+                  class="text-3xs font-bold uppercase text-gray-light md:text-2xs"
+                >
+                  Prep time
+                </span>
+                <span class="text-2xs md:text-sm">45 minutes</span>
+              </p>
+            </div>
+            <div class="flex items-center gap-4">
+              <span class="material-icons-outlined w-4 md:w-8"> schedule </span>
+              <p class="flex flex-col">
+                <span
+                  class="text-3xs font-bold uppercase text-gray-light md:text-2xs"
+                >
+                  Cook time
+                </span>
+                <span class="text-2xs md:text-sm">1 hour</span>
+              </p>
+            </div>
+            <div class="flex items-center gap-4">
+              <span class="material-icons-outlined w-4 md:w-8"> schedule </span>
+              <p class="flex flex-col">
+                <span
+                  class="text-3xs font-bold uppercase text-gray-light md:text-2xs"
+                >
+                  Total time
+                </span>
+                <span class="text-2xs md:text-sm">1:45 hours</span>
+              </p>
+            </div>
+          </section>
+        </aside>
 
         <div>
-          <aside class="my-6 flex flex-col gap-6">
-            <section class="grid grid-cols-3 gap-8">
-              <div class="flex items-center gap-4">
-                <span class="material-icons-outlined w-4 text-orange">
-                  restaurant_menu
-                </span>
-                <p class="flex flex-col">
-                  <span class="text-3xs font-bold uppercase text-gray-light">
-                    Yields
-                  </span>
-                  <span class="text-2xs text-orange">12 servings</span>
-                </p>
-              </div>
-            </section>
-            <section class="grid grid-cols-3 gap-8">
-              <div class="flex items-center gap-4">
-                <span class="material-icons-outlined w-4"> schedule </span>
-                <p class="flex flex-col">
-                  <span class="text-3xs font-bold uppercase text-gray-light">
-                    Prep time
-                  </span>
-                  <span class="text-2xs">45 minutes</span>
-                </p>
-              </div>
-              <div class="flex items-center gap-4">
-                <span class="material-icons-outlined w-4"> schedule </span>
-                <p class="flex flex-col">
-                  <span class="text-3xs font-bold uppercase text-gray-light">
-                    Cook time
-                  </span>
-                  <span class="text-2xs">1 hour</span>
-                </p>
-              </div>
-              <div class="flex items-center gap-4">
-                <span class="material-icons-outlined w-4"> schedule </span>
-                <p class="flex flex-col">
-                  <span class="text-3xs font-bold uppercase text-gray-light">
-                    Total time
-                  </span>
-                  <span class="text-2xs">1:45 hours</span>
-                </p>
-              </div>
-            </section>
-          </aside>
-
           <section>
-            <h2 class="mb-3.5 font-serif text-xl font-bold">Ingredients</h2>
+            <h2 class="mb-3.5 font-serif text-xl font-bold md:mb-8 md:text-2xl">
+              Ingredients
+            </h2>
 
             <article class="mb-8">
-              <h3 class="mb-4 font-serif text-base italic">
+              <h3 class="mb-4 font-serif text-base italic md:mb-6 md:text-lg">
                 Graham Cracker Crust
               </h3>
-              <ul class="flex flex-col gap-2">
+              <ul class="flex flex-col gap-2 md:gap-3">
                 <li class="flex items-start gap-2">
                   <input
                     type="checkbox"
-                    class="mt-[2px] scale-110 accent-orange"
+                    class="mt-[2px] scale-110 accent-orange md:mr-2"
                     name="Graham Cracker Crust"
                     id="gcc-01"
                   />
-                  <label for="gcc-01" class="text-sm">
+                  <label for="gcc-01" class="text-sm md:text-base">
                     1 and 1/2 cups (150g)
                     <strong class="font-bold">graham cracker crumbs</strong>
                     (about 10 full sheet graham crackers)
@@ -112,11 +128,11 @@
                 <li class="flex items-start gap-2">
                   <input
                     type="checkbox"
-                    class="mt-[2px] scale-110 accent-orange"
+                    class="mt-[2px] scale-110 accent-orange md:mr-2"
                     name="Graham Cracker Crust"
                     id="gcc-02"
                   />
-                  <label for="gcc-02" class="text-sm">
+                  <label for="gcc-02" class="text-sm md:text-base">
                     5 Tablespoons (70g)
                     <strong class="font-bold">unsalted butter</strong>, melted
                   </label>
@@ -124,11 +140,11 @@
                 <li class="flex items-start gap-2">
                   <input
                     type="checkbox"
-                    class="mt-[2px] scale-110 accent-orange"
+                    class="mt-[2px] scale-110 accent-orange md:mr-2"
                     name="Graham Cracker Crust"
                     id="gcc-03"
                   />
-                  <label for="gcc-03" class="text-sm">
+                  <label for="gcc-03" class="text-sm md:text-base">
                     1/4 cup (50g)
                     <strong class="font-bold">granulated sugar</strong>
                   </label>
@@ -137,16 +153,18 @@
             </article>
 
             <article class="mb-8">
-              <h3 class="mb-4 font-serif text-base italic">Cheesecake</h3>
-              <ul class="flex flex-col gap-2">
+              <h3 class="mb-4 font-serif text-base italic md:mb-6 md:text-lg">
+                Cheesecake
+              </h3>
+              <ul class="flex flex-col gap-2 md:gap-3">
                 <li class="flex items-start gap-2">
                   <input
                     type="checkbox"
-                    class="mt-[2px] scale-110 accent-orange"
+                    class="mt-[2px] scale-110 accent-orange md:mr-2"
                     name="Cheesecake"
                     id="chc-01"
                   />
-                  <label for="chc-01" class="text-sm">
+                  <label for="chc-01" class="text-sm md:text-base">
                     four 8-ounce blocks (904g) full-fat
                     <strong class="font-bold">cream cheese</strong>, softened to
                     room temperature
@@ -155,11 +173,11 @@
                 <li class="flex items-start gap-2">
                   <input
                     type="checkbox"
-                    class="mt-[2px] scale-110 accent-orange"
+                    class="mt-[2px] scale-110 accent-orange md:mr-2"
                     name="Cheesecake"
                     id="chc-02"
                   />
-                  <label for="chc-02" class="text-sm">
+                  <label for="chc-02" class="text-sm md:text-base">
                     1 cup (200g)
                     <strong class="font-bold">granulated sugar</strong>
                   </label>
@@ -167,11 +185,11 @@
                 <li class="flex items-start gap-2">
                   <input
                     type="checkbox"
-                    class="mt-[2px] scale-110 accent-orange"
+                    class="mt-[2px] scale-110 accent-orange md:mr-2"
                     name="Cheesecake"
                     id="chc-04"
                   />
-                  <label for="chc-04" class="text-sm">
+                  <label for="chc-04" class="text-sm md:text-base">
                     1 cup (240g) full-fat
                     <strong class="font-bold">sour cream</strong>, at room
                     temperature
@@ -180,11 +198,11 @@
                 <li class="flex items-start gap-2">
                   <input
                     type="checkbox"
-                    class="mt-[2px] scale-110 accent-orange"
+                    class="mt-[2px] scale-110 accent-orange md:mr-2"
                     name="Cheesecake"
                     id="chc-05"
                   />
-                  <label for="chc-05" class="text-sm">
+                  <label for="chc-05" class="text-sm md:text-base">
                     1 teaspoon
                     <strong class="font-bold">pure vanilla extract</strong>
                   </label>
@@ -192,11 +210,11 @@
                 <li class="flex items-start gap-2">
                   <input
                     type="checkbox"
-                    class="mt-[2px] scale-110 accent-orange"
+                    class="mt-[2px] scale-110 accent-orange md:mr-2"
                     name="Cheesecake"
                     id="chc-06"
                   />
-                  <label for="chc-06" class="text-sm">
+                  <label for="chc-06" class="text-sm md:text-base">
                     2 teaspoons
                     <strong class="font-bold">fresh lemon juice</strong>
                     (optional, but recommended)
@@ -205,11 +223,11 @@
                 <li class="flex items-start gap-2">
                   <input
                     type="checkbox"
-                    class="mt-[2px] scale-110 accent-orange"
+                    class="mt-[2px] scale-110 accent-orange md:mr-2"
                     name="Cheesecake"
                     id="chc-07"
                   />
-                  <label for="chc-07" class="text-sm">
+                  <label for="chc-07" class="text-sm md:text-base">
                     3 large <strong class="font-bold">eggs</strong>, at room
                     temperature
                   </label>
@@ -217,11 +235,11 @@
                 <li class="flex items-start gap-2">
                   <input
                     type="checkbox"
-                    class="mt-[2px] scale-110 accent-orange"
+                    class="mt-[2px] scale-110 accent-orange md:mr-2"
                     name="Cheesecake"
                     id="chc-08"
                   />
-                  <label for="chc-08" class="text-sm"
+                  <label for="chc-08" class="text-sm md:text-base"
                     >topping suggestions:
                     <em class="italic">
                       salted caramel, lemon curd, strawberry topping, chocolate
@@ -236,10 +254,12 @@
           </section>
 
           <section>
-            <h2 class="mb-3.5 font-serif text-xl font-bold">Instructions</h2>
-            <ol class="mb-6 flex flex-col gap-6">
+            <h2 class="mb-3.5 font-serif text-xl font-bold md:mb-8 md:text-2xl">
+              Instructions
+            </h2>
+            <ol class="mb-6 flex flex-col gap-6 md:mb-8 md:gap-8">
               <li
-                class="flex flex-row items-start gap-4 [counter-increment:_instructions] before:flex before:aspect-square before:w-10 before:shrink-0 before:items-center before:justify-center before:rounded-lg before:bg-orange before:p-2 before:font-serif before:text-2xl before:font-bold before:leading-none before:text-white before:content-[counter(instructions)]"
+                class="flex flex-row items-start gap-4 [counter-increment:_instructions] before:flex before:aspect-square before:w-10 before:shrink-0 before:items-center before:justify-center before:rounded-lg before:bg-orange before:p-2 before:pt-0 before:font-serif before:text-2xl before:font-bold before:leading-none before:text-white before:content-[counter(instructions)]"
               >
                 <p>
                   Adjust the oven rack to the lower-middle position and preheat
@@ -247,7 +267,7 @@
                 </p>
               </li>
               <li
-                class="flex flex-row items-start gap-4 [counter-increment:_instructions] before:flex before:aspect-square before:w-10 before:shrink-0 before:items-center before:justify-center before:rounded-lg before:bg-orange before:p-2 before:font-serif before:text-2xl before:font-bold before:leading-none before:text-white before:content-[counter(instructions)]"
+                class="flex flex-row items-start gap-4 [counter-increment:_instructions] before:flex before:aspect-square before:w-10 before:shrink-0 before:items-center before:justify-center before:rounded-lg before:bg-orange before:p-2 before:pt-0 before:font-serif before:text-2xl before:font-bold before:leading-none before:text-white before:content-[counter(instructions)]"
               >
                 <p>
                   <strong class="font-bold">Make the crust:</strong> Using a
@@ -265,7 +285,7 @@
                 </p>
               </li>
               <li
-                class="flex flex-row items-start gap-4 [counter-increment:_instructions] before:flex before:aspect-square before:w-10 before:shrink-0 before:items-center before:justify-center before:rounded-lg before:bg-orange before:p-2 before:font-serif before:text-2xl before:font-bold before:leading-none before:text-white before:content-[counter(instructions)]"
+                class="flex flex-row items-start gap-4 [counter-increment:_instructions] before:flex before:aspect-square before:w-10 before:shrink-0 before:items-center before:justify-center before:rounded-lg before:bg-orange before:p-2 before:pt-0 before:font-serif before:text-2xl before:font-bold before:leading-none before:text-white before:content-[counter(instructions)]"
               >
                 <p>
                   <strong class="font-bold">Make the filling:</strong> Using a
@@ -282,7 +302,7 @@
                 </p>
               </li>
               <li
-                class="flex flex-row items-start gap-4 [counter-increment:_instructions] before:flex before:aspect-square before:w-10 before:shrink-0 before:items-center before:justify-center before:rounded-lg before:bg-orange before:p-2 before:font-serif before:text-2xl before:font-bold before:leading-none before:text-white before:content-[counter(instructions)]"
+                class="flex flex-row items-start gap-4 [counter-increment:_instructions] before:flex before:aspect-square before:w-10 before:shrink-0 before:items-center before:justify-center before:rounded-lg before:bg-orange before:p-2 before:pt-0 before:font-serif before:text-2xl before:font-bold before:leading-none before:text-white before:content-[counter(instructions)]"
               >
                 <p>
                   <strong class="font-bold">
@@ -301,7 +321,7 @@
                 </p>
               </li>
               <li
-                class="flex flex-row items-start gap-4 [counter-increment:_instructions] before:flex before:aspect-square before:w-10 before:shrink-0 before:items-center before:justify-center before:rounded-lg before:bg-orange before:p-2 before:font-serif before:text-2xl before:font-bold before:leading-none before:text-white before:content-[counter(instructions)]"
+                class="flex flex-row items-start gap-4 [counter-increment:_instructions] before:flex before:aspect-square before:w-10 before:shrink-0 before:items-center before:justify-center before:rounded-lg before:bg-orange before:p-2 before:pt-0 before:font-serif before:text-2xl before:font-bold before:leading-none before:text-white before:content-[counter(instructions)]"
               >
                 <p>
                   Bake cheesecake for 55-70 minutes or until the center is
@@ -315,7 +335,7 @@
                 </p>
               </li>
               <li
-                class="flex flex-row items-start gap-4 [counter-increment:_instructions] before:flex before:aspect-square before:w-10 before:shrink-0 before:items-center before:justify-center before:rounded-lg before:bg-orange before:p-2 before:font-serif before:text-2xl before:font-bold before:leading-none before:text-white before:content-[counter(instructions)]"
+                class="flex flex-row items-start gap-4 [counter-increment:_instructions] before:flex before:aspect-square before:w-10 before:shrink-0 before:items-center before:justify-center before:rounded-lg before:bg-orange before:p-2 before:pt-0 before:font-serif before:text-2xl before:font-bold before:leading-none before:text-white before:content-[counter(instructions)]"
               >
                 <p>
                   Use a knife to loosen the chilled cheesecake from the rim of
@@ -325,7 +345,7 @@
                 </p>
               </li>
               <li
-                class="flex flex-row items-start gap-4 [counter-increment:_instructions] before:flex before:aspect-square before:w-10 before:shrink-0 before:items-center before:justify-center before:rounded-lg before:bg-orange before:p-2 before:font-serif before:text-2xl before:font-bold before:leading-none before:text-white before:content-[counter(instructions)]"
+                class="flex flex-row items-start gap-4 [counter-increment:_instructions] before:flex before:aspect-square before:w-10 before:shrink-0 before:items-center before:justify-center before:rounded-lg before:bg-orange before:p-2 before:pt-0 before:font-serif before:text-2xl before:font-bold before:leading-none before:text-white before:content-[counter(instructions)]"
               >
                 <p>
                   Serve cheesecake with desired toppings. Cover and store
@@ -334,7 +354,7 @@
               </li>
             </ol>
 
-            <p class="hover:text-neutral text-xs text-gray-light">
+            <p class="hover:text-neutral text-xs text-gray-light md:text-base">
               Source:
               <a
                 href="https://sallysbakingaddiction.com/classic-cheesecake/"
