@@ -10,13 +10,17 @@ module.exports = {
       colors: {
         gray: {
           "x-light": "#BDBDBD",
-          neutral: "#E5E5E5",
-          light: "#A9A9A9",
-          dark: "#4E5150",
+          light: "#BDBDBD",
+          neutral: "#4F4F4F",
+          dark: "#333333",
         },
-        orange:{
-          DEFAULT:"#F2994A"
-        }
+        orange: {
+          DEFAULT: "#F2994A",
+        },
+      },
+      fontSize: {
+        "3xs": "0.5rem",
+        "2xs": "0.625rem",
       },
     },
     fontFamily: {
